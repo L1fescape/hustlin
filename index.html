@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bertrand Russell had all that hustle</title>
+  <style>
+    html,body {
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+    }
+  </style>
+  <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+  <iframe id="video" src="//www.youtube.com/embed/4kosEG2rxf4?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+  <script>
+    $(function(){
+      $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
+
+      $(window).resize(function(){
+        $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
+      });
+    });
+  </script>
+</body>
+</html>
